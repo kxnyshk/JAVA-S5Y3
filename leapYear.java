@@ -1,29 +1,27 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class leapYear {
     static{
     
-        System.out.println("This program tells you if the input year is Leap or not.");
+        System.out.println("Checks for Leap year.");
     }
     public static void main(String[] args){
     
-        System.out.println("Enter the year:");
+        System.out.print("\nEnter the year: ");
         Scanner scan = new Scanner(System.in);
         int year = scan.nextInt();
 
         if(year>=1){
 
             checkLeap(year);
-            System.out.println("Press 1 to re-run. 0 to exit.");
+            System.out.print("Press 1 to re-run. 0 to exit. ");
                 run();
         }
 
         else{
 
             System.out.println("Enter valid input. [Post 1 Anno Domini]");
-            System.out.println("Press 1 to re-run. 0 to exit.");
+            System.out.print("Press 1 to re-run. 0 to exit. ");
                 run();
         }
         scan.close();
@@ -35,23 +33,23 @@ public class leapYear {
             if(n%100==0){
                 if(n%400==0){
 
-                    System.out.println(n + " is a leap year.");
+                    System.out.println(n + " is a leap year.\n");
                 }
 
                 else{
 
-                    System.out.println(n + " is not a leap year.");
+                    System.out.println(n + " is not a leap year.\n");
                 }
             }
 
             else{
 
-                System.out.println(n + " is a leap year.");
+                System.out.println(n + " is a leap year.\n");
             }
         }
 
         else{
-            System.out.println(n + " is not a leap year.");
+            System.out.println(n + " is not a leap year.\n");
         }
     }
 

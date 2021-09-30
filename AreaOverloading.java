@@ -2,7 +2,7 @@ public class AreaOverloading {
     
     static{
     
-        System.out.println("This program calculates the area of a triangle, circle & rectangle using the concept of method overloading.\n");
+        System.out.println("Using Method overloading for calculating areas.\n");
     }
     public static void main(String[] args){
     

@@ -1,11 +1,9 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class strToChar {
     
     static{
-        System.out.println("This JAVA program converts a String to Char.");
+        System.out.println("This JAVA program converts String to Char.\n");
     }
     public static void main(String[] args){
 
@@ -15,10 +13,11 @@ public class strToChar {
 
         int length = str.length();
 
+        System.out.print("\n");
         for(int i=0; i<length; i++){
-
             char c = str.charAt(i);
             System.out.println("Char at " + i + ": " + c);
         }
+        System.out.print("\n");
     }
 }

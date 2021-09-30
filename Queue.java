@@ -2,31 +2,23 @@ public class Queue {
     
     static{
     
-        System.out.println("This program implements Queue.");
+        System.out.println("This program implements Queue.\n");
     }
     public static void main(String[] args){
     
         queue1 q = new queue1();
-        q.dequeue();
         q.peek();
-        q.show();
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
         q.enqueue(40);
-        // q.enqueue(50);
-        // q.enqueue(60);
+        q.enqueue(50);
+        q.enqueue(60);
         q.peek();
-        q.show();
-        q.dequeue();
-        q.dequeue();
         q.dequeue();
         q.dequeue();
         q.peek();
         q.show();
-        // q.enqueue(50);
-        // q.peek();
-        // q.show();
     }
 }
 

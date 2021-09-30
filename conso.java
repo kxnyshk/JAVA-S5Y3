@@ -1,20 +1,17 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class conso {
     
     static{
-        System.out.println("This programs checks the input to be a vowel or a consonant.");
+        System.out.println("Checks the input to be vowel or consonant.");
     }
     public static void main(String[] args){
         
-        System.out.println("Enter the char:");
+        System.out.println("\nEnter the char:");
         Scanner scan = new Scanner(System.in);
         char c = scan.next().charAt(0);
 
         if((c>='a' && c<='z') || (c>='A' && c<='Z')){
-
             switch(c){
                 case 'a':
                 case 'A':
@@ -26,14 +23,11 @@ public class conso {
                 case 'O':
                 case 'u':
                 case 'U':{
-
-                    System.out.println("Char: " + c + " is a vowel.");
+                    System.out.println("Char: " + c + " is a vowel.\n");
                         break;
                 }
-
                 default:{
-
-                    System.out.println("Char: " + c + " is a consonant.");
+                    System.out.println("Char: " + c + " is a consonant.\n");
                         break;
                 }
             }

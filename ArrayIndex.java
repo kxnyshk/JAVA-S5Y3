@@ -2,22 +2,22 @@ public class ArrayIndex {
     
     static{
     
-        System.out.println("This program finds out the array index where the sum of left half of the array equals the right half.");
+        System.out.println("Array idx where sum of the left half equals the right half.");
     }
     public static void main(String[] args){
     
-        int[] array = {1,2,3,4,10,20,40,90};
+        int[] array = {1,2,3,4,10,20,40};
         int n = array.length;
         int sum = sum(array, n);
         // System.out.println(sum);
-        System.out.println("\nInput array: ");
+        System.out.print("\nInput array: ");
         for(int num:array){
             System.out.print(num + " ");
         }
 
         int idx = Index(array, n, sum);
         if(idx<n){
-            System.out.println("\n\nSum to the left of Array Index --> " + idx + " equals to its right.\n");
+            System.out.println("\n\nSum left of index '" + idx + "' equals its right.\n");
         }
     }
 

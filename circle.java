@@ -1,21 +1,19 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class circle {
     static{
     
-        System.out.println("This program calculates the area of a circle, given it's radii as an user input.");
+        System.out.println("Displays area of a circle.");
     }
     public static void main(String[] args){
     
-        System.out.println("Enter the radius:");
+        System.out.print("\nEnter the radius: ");
         Scanner scan = new Scanner(System.in);
         Double r = scan.nextDouble();
 
         area(r);
 
-        System.out.println("Press 1 to re-run. 0 to exit.");
+        System.out.print("Press 1 to re-run. 0 to exit. ");
             run();
 
         scan.close();
@@ -28,7 +26,7 @@ public class circle {
             Double area;
             area = Math.PI*Math.pow(radi, 2);
 
-            System.out.println("Area: " + area);
+            System.out.println("Area: " + String.format("%.2f",area) + "\n");
         }
         
         else{

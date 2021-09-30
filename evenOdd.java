@@ -1,21 +1,19 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class evenOdd {
     static{
     
-        System.out.println("This program prints if the input integer is odd or even.");
+        System.out.println("Checks if input integer is Even or Odd.");
     }
     public static void main(String[] args){
     
-        System.out.println("Enter the integer:");
+        System.out.print("\nEnter the integer: ");
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
         oddEven(n);
 
-        System.out.println("Press 1 to re-run. 0 to exit.");
+        System.out.print("Press 1 to re-run. 0 to exit. ");
             run();
 
         scan.close();
@@ -25,10 +23,10 @@ public class evenOdd {
 
         if(i%2==0){
 
-            System.out.println(i + " is even.");
+            System.out.println(i + " is even.\n");
         }
         else{
-            System.out.println(i + " is odd.");
+            System.out.println(i + " is odd.\n");
         }
     }
 

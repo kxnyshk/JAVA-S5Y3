@@ -1,24 +1,21 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class firstNprime {
     static{
     
-        System.out.println("This program prints you out the first N prime numbers, based on your input.");
+        System.out.println("Displays the first N primes.");
     }
     public static void main(String[] args){
     
-        System.out.println("Print first ___ primes:");
+        System.out.print("\nPrint first ___ primes: ");
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
         if(n>=1){
 
             int count = 0;
-            int temp = 0;    
-            System.out.println("<---------->");
-            System.out.println("First " + n + " primes:");
+            int temp = 0;
+            System.out.println("\nFirst " + n + " primes:");
             
             for(int i=2; count<n; i++){
 
@@ -42,7 +39,7 @@ public class firstNprime {
                 }
             }
 
-            System.out.println("Press 1 to re-run. 0 to exit.");
+            System.out.println("\nPress 1 to re-run. 0 to exit.");
                 run();
         }
 

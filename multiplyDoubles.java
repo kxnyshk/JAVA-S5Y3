@@ -1,22 +1,20 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class multiplyDoubles {
     static{
     
-        System.out.println("This program shows the product of two doubles input.");
+        System.out.println("Product of 2 doubles.");
     }
     public static void main(String[] args){
     
-        System.out.println("Enter the two doubles:");
+        System.out.print("\nEnter the two doubles: ");
         Scanner scan = new Scanner(System.in);
         Double d1 = scan.nextDouble();
         Double d2 = scan.nextDouble();
 
         prod(d1, d2);
         
-        System.out.println("Press 1 to re-run. 0 to exit.");
+        System.out.print("Press 1 to re-run. 0 to exit. ");
             run();
 
         scan.close();
@@ -25,8 +23,7 @@ public class multiplyDoubles {
     public static void prod(Double n, Double m){
 
         Double prod = n*m;
-        System.out.println("----------");
-        System.out.println("x " + prod);
+        System.out.println("Product: " + prod + "\n");
     }
 
     public static void run(){

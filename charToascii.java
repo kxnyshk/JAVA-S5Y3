@@ -1,11 +1,9 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class charToascii {
     
     static{
-        System.out.println("This program prints the ASCII value of the desired char you want to see.");
+        System.out.println("This program prints the ASCII value of the desired char you want to see.\n");
     }
     public static void main(String[] args){
 
@@ -17,10 +15,10 @@ public class charToascii {
             
             int ascii = c;
 
-            System.out.println("Char: " + c);
+            System.out.println("\nChar: " + c);
             System.out.println("ASCII value: " + ascii);
 
-            System.out.println("Press 1 to re-run. 0 to exit.");
+            System.out.println("\nPress 1 to re-run. 0 to exit.");
             run();
         }
 

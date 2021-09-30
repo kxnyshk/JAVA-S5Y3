@@ -1,5 +1,3 @@
-package sem5Y3;
-
 import java.util.Scanner;
 
 public class nPrime {
